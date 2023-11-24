@@ -1,1 +1,3 @@
-CREATE DATABASE Trybefy 
+CREATE DATABASE Trybefy;
+
+USE Trybefy;
