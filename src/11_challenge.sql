@@ -1,7 +1,8 @@
 SELECT
-    title 'Album',
-    release_year 'Ano de lançamento',
-    name 'Artista'
-FROM albums
-    INNER JOIN artists ON artists.id = albums.artist_id
-WHERE albums.title LIKE '%You%';
+    al.title 'Album',
+    al.release_year 'Ano de lançamento',
+    ar.name 'Artista'
+FROM albums AS al
+    INNER JOIN artists AS ar ON ar.id = al.artist_id
+ORDER BY al.release_years
+WHERE al.title LIKE '%You%';
